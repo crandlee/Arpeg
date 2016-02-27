@@ -11,7 +11,7 @@ namespace Test.Core
         public void IdIsSet()
         {
             var testId = Guid.NewGuid();
-            var c = new Character(testId);
+            var c = new Actor(testId);
             c.Id.Should().Be(testId);
         }
 

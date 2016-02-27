@@ -1,22 +1,20 @@
 ﻿using System;
+using Core.General;
 
 namespace Core
 {
-    //TODO: Make Entity
 
-    public sealed class Character
+    public sealed class Actor: Entity<Guid>
     {
         /// <summary>
         /// Provides the base implementation for a character
         /// </summary>
         /// <param name="id"></param>
        
-        public Character(Guid id)
+        public Actor(Guid id) : base(id)
         {
-            Id = id;
         }
 
 
-        public Guid Id { get; }
     }
 }

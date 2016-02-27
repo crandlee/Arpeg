@@ -1,8 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Core.General
 {
+    /// <summary>
+    /// The base implementation of an Entity
+    /// </summary>
+    /// <typeparam name="TId">The type of the Entity Id</typeparam>
     public abstract class Entity<TId>: IEquatable<Entity<TId>>
     {    
         public TId Id { get; }
